@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simon Says</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+
+  <div id="app">
+    <h1>Simon says</h1>
+    <div id="container">
+      <div id="green" v-on:click="checkButton('green')" class="simon-button" v-bind:style="{ background: green }"></div>
+      <div id="red" v-on:click="checkButton('red')" class="simon-button" v-bind:style="{ background: red }"></div>
+      <div id="yellow" v-on:click="checkButton('yellow')" class="simon-button" v-bind:style="{ background: yellow }"></div>
+      <div id="blue" v-on:click="checkButton('blue')" class="simon-button"  v-bind:style="{ background: blue }"></div>
+    </div>
+    <div id="control">
+
+      <button v-on:click="startGame()" id="start">Start/Restart</button>
+      <output id="stp-count">Rounds: {{counter}}</output>
+
+    </div>
+    <div class="game-options">
+      <h2>Difficult:</h2>
+			<input type="radio" name='radio' value="easy" @change="changeDifficult" checked>Easy<br>
+			<input type="radio" name='radio' value="normal" @change="changeDifficult">Normal<br>
+			<input type="radio" name='radio' value="hard" @change="changeDifficult">Hard<br>
+			<input type="radio" name='radio' value="nightmare" @change="changeDifficult">Nightmare<br>
+		</div>
+  </div>
+<script src="script.js"></script>
+</body>
+
+</html>

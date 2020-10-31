@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik Mono One', sans-serif;
+  box-sizing: border-box;
+}
+
+#app{
+  min-width: 100%;
+  position: absolute;
+  text-align: center;
+}
+
+.simon-button{
+  height: 40%;
+  width: 40%;
+}
+
+#container{
+  display: flex;
+  height: 400px;
+  width: 400px;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  left: 25%;
+  top: 100px;
+}
+
+
+#green{
+  border-radius:  100% 0 0 0;
+  border-color: #180F0F;
+  border-bottom: 10px solid #444;
+  border-left: 20px solid #444;
+  border-top: 20px solid #444;
+  border-right: 10px solid #444;
+}
+#red{
+
+  border-radius:  0 100% 0 0;
+  border-bottom: 10px solid #444;
+  border-left: 10px solid #444;
+  border-right: 20px solid #444;
+  border-top: 20px solid #444;
+}
+#yellow{
+
+  border-radius:  0 0 0 100%;
+  border-bottom: 20px solid #444;
+  border-left: 20px solid #444;
+  border-right: 10px solid #444;
+  border-top: 10px solid #444;
+}
+#blue{
+
+  border-radius: 0 0 100% 0;
+  border-bottom: 20px solid #444;
+  border-right: 20px solid #444;
+  border-left: 10px solid #444;
+  border-top: 10px solid #444;
+}
+
+#control{
+  position: absolute;
+  font-family: 'Oswald', sans-serif;
+  display: flex;
+  flex-direction: column;
+  right: 40%;
+  top: 180px;
+}
+#start{
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  outline: none;
+
+}
+#start button{
+
+}
+#stp-count{
+
+  font-family: Orbitron;
+  font-size: 20px;
+  text-align:center;
+  min-width: 20px;
+}
+
+h1{
+  color: #444;
+  font-size: 5vh;
+  text-align: center;
+}
+
+.game-options{
+  position: absolute;
+  text-align: left;
+  right: 40%;
+  top: 280px;
+}
